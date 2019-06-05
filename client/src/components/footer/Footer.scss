@@ -1,0 +1,12 @@
+@import '../fonts.scss';
+@import '../colors.scss';
+
+
+.footer-wrapper {
+    height: 6.25rem;
+
+
+    .footer-title {
+        @include subheader;
+    }
+}

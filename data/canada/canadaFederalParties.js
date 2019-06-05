@@ -3,11 +3,11 @@
 // import { canadaFederalConservativePlatform } from './conservative/canadaFederalConservativePlatform.js';
 // import { canadaFederalBlocQuebecoisPlatform } from './blocquebecois/canadaFederalBlocQuebecoisPlatform.js';
 // import { canadaFederalGreenPlatform } from './green/canadaFederalGreenPlatform.js';
-const canadaFederalNdpPlatform = require('./ndp/canadaFederalNdpPlatform.js').canadaFederalNdpPlatform;
-const canadaFederalLiberalPlatform = require('./liberal/canadaFederalLiberalPlatform.js').canadaFederalLiberalPlatform;
-const canadaFederalConservativePlatform = require('./conservative/canadaFederalConservativePlatform.js').canadaFederalConservativePlatform;
-const canadaFederalBlocQuebecoisPlatform = require('./blocquebecois/canadaFederalBlocQuebecoisPlatform.js').canadaFederalBlocQuebecoisPlatform;
-const canadaFederalGreenPlatform = require('./green/canadaFederalGreenPlatform.js').canadaFederalGreenPlatform;
+const canadaFederalNdpPlatform = require('./ndp/canadaFederalNdpPlatform.js');
+const canadaFederalLiberalPlatform = require('./liberal/canadaFederalLiberalPlatform.js');
+const canadaFederalConservativePlatform = require('./conservative/canadaFederalConservativePlatform.js');
+const canadaFederalBlocQuebecoisPlatform = require('./blocquebecois/canadaFederalBlocQuebecoisPlatform.js');
+const canadaFederalGreenPlatform = require('./green/canadaFederalGreenPlatform.js');
 
 let canadaFederalParties = [
         {

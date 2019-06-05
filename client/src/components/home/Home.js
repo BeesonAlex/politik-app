@@ -1,13 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import NavBarHome from '../nav-bar/NavBarHome';
+import Splash from '../splash/Splash';
+import Footer from '../footer/Footer';
+import './Home.scss';
+import '../../App.scss';
 
-export class Home extends Component {
+class Home extends Component {
     render() {
         return (
-            <div className="home-wrapper">
-                
-            </div>
+            <>
+            <nav>
+            <NavBarHome />
+            </nav>
+            <main className="main-wrapper">
+            <Splash />
+            </main>
+            <footer>
+            <Footer />
+            </footer>
+            </>
         )
     }
 }
 
-export default Home
+export default Home;
