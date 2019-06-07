@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import CountrySelect from './components/country-select/CountrySelect';
 import Country from './components/country/Country';
 import Party from './components/party/Party';
+import Budget from './components/budget/Budget';
 import './App.scss';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/countries" exact component={CountrySelect} />
       <Route path="/countries/:id" exact component={Country} />
       <Route path="/countries/:id/parties/:id" exact component={Party} />
+      <Route path="/countries/:id/parties/:id/budget" exact component={Budget} />
       </Switch>
       </BrowserRouter>
     </div>

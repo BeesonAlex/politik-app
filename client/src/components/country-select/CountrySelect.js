@@ -25,7 +25,7 @@ export class CountrySelect extends Component {
     }
 
     render() {
-        console.log(this.state.countryList)
+
         return (
             <>
             <NavBarContent />
