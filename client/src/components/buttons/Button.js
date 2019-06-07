@@ -4,9 +4,9 @@ import './Buttons.scss';
 export class Button extends Component {
     render() {
         return (
-            <div className="button-wrapper">
+            <button className="button-wrapper">
                 <h2 className="button-text">{this.props.content}</h2>
-            </div>
+            </button>
         )
     }
 }

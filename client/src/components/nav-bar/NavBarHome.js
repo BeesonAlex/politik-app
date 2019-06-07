@@ -7,6 +7,7 @@ import './NavBarHome.scss';
 
 class NavBarHome extends Component {
     render() {
+        // Home NavBar
         return (
             <div className="navbar-background">
             <div className="navbar-wrapper home">
@@ -24,7 +25,7 @@ class NavBarHome extends Component {
             </div>
             </div>
         )
-    }
+}
 }
 
 export default NavBarHome;

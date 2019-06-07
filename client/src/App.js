@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, BrowserRouter, Route } from "react-router-dom";
 import Home from './components/home/Home';
-import Content from './components/content/Content';
+import CountrySelect from './components/country-select/CountrySelect';
+import Country from './components/country/Country';
+import Party from './components/party/Party';
 import './App.scss';
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
       <BrowserRouter>
       <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/country-select" exact component={Content} />
+      <Route path="/countries" exact component={CountrySelect} />
+      <Route path="/countries/:id" exact component={Country} />
+      <Route path="/countries/:id/parties/:id" exact component={Party} />
       </Switch>
       </BrowserRouter>
     </div>

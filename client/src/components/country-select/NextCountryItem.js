@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import './CountrySelect.scss';
 
 export class NextCountryItem extends Component {
     render() {
         return (
+            <Link to={{
+                pathname: `/countries/${this.props.id}`,
+            }}>
             <div className="country-item-wrapper">
                 <div className="country-item-flag-wrapper">
                     <div className="country-item__flag" style={{backgroundImage: `url(${this.props.flag})`}} />
@@ -15,6 +19,7 @@ export class NextCountryItem extends Component {
                 </div>
                 </div>
             </div>
+            </Link>
         )
     }
 }

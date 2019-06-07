@@ -51,7 +51,7 @@ let countryList = [
             partySystem: "Two-Party",
             parties: 2,
             nextElectionDate: "October 19, 2019",
-            flag: "https://lipis.github.io/flag-icon-css/flags/4x3/ca.svg",
+            flag: "https://lipis.github.io/flag-icon-css/flags/4x3/us.svg",
             primaryColour:"#d71922",
             secondaryColour: "#FFFFFF",
             thirdColour: "#FFFFFF",

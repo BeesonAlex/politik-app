@@ -7,19 +7,19 @@
 
 @font-face {
     font-family: 'Caslon Bold';
-    src: '../assets/fonts/librecaslontext-bold.otf';
+    src: url('../../assets/fonts/librecaslontext-bold.otf') format("opentype");
 }
 @font-face {
     font-family: 'Caslon Regular';
-    src: '../assets/fonts/librecaslontext-regular.otf';
+    src: url('../../assets/fonts/librecaslontext-regular.otf') format("opentype");
 }
 @font-face {
     font-family: 'Futura Bold';
-    src: '../assets/fonts/Futura-Bold.ttf', format('truetype');
+    src: url('../../assets/fonts/Futura-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Futura Regular';
-    src: '../assets/fonts/Futura-Medium.ttf', format('truetype');
+    src: url('../../assets/fonts/Futura-Medium.ttf') format('truetype');
 }
 
 
@@ -41,9 +41,13 @@
 
 @mixin h2-header () {
     font-family:'Caslon Bold', serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
     color: $black;
+    margin: 0rem;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: underline $politik-yellow;
 }
 
 @mixin subheader () {
@@ -72,7 +76,7 @@
     font-family:'Roboto', sans-serif;
     font-size: 0.75rem;
     line-height: 1.25rem;
-    color: $silver;
+    color: $black;
     text-transform: uppercase;
     font-weight: 700;
 }

@@ -10,7 +10,7 @@ class Splash extends Component {
                 <div className="splash-content-wrapper">
                 <h1 className="splash-hero--title">Learn. Engage. Vote</h1>
                 <h2 className="splash-hero--subheading">A platform for the modern voter</h2>
-                <Link to="/country-select"><Button content="Get Started" /></Link>
+                <Link to="/countries"><Button content="Get Started" /></Link>
                 <div className="layout-block" />
                 </div>
             </div>

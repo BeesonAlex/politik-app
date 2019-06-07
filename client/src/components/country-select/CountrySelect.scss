@@ -5,6 +5,7 @@
     background-color: $politik-light-grey;
     width: 100%;
     height: 100%;
+    padding-top: 9rem;
 
     .country-select__card {
         margin: 0rem 1rem;
@@ -13,16 +14,16 @@
         background-color: $white;
 
         .country-select__title {
-            @include h1-header;
+            @include h2-header;
             margin: 0rem;
-            padding: 2rem 0rem 2rem 2rem;
+            padding: 1.5rem 0rem 2rem 1rem;
             text-align: left;
             text-decoration: underline $politik-yellow;
         }
 
         .country-item-wrapper {
             margin: 0rem 1rem 1rem 1rem;
-            padding: 0rem 1rem 1rem 1rem;
+            padding: 0rem 0rem 1rem 0rem;
             border-bottom: 1px solid $mercury;
             display: flex;
             align-items: center;
@@ -31,7 +32,7 @@
 
                 .country-item__flag {
                     height: 65px;
-                    width: 70px;
+                    width: 75px;
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
