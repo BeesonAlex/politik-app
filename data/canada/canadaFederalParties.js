@@ -5,13 +5,16 @@
 // import { canadaFederalGreenPlatform } from './green/canadaFederalGreenPlatform.js';
 const canadaFederalNdpPlatform = require('./ndp/canadaFederalNdpPlatform.js');
 const canadaFederalLiberalPlatform = require('./liberal/canadaFederalLiberalPlatform.js');
+const canadaFederalLiberalBudget = require('./liberal/canadaFederalLiberalBudget.js');
 const canadaFederalConservativePlatform = require('./conservative/canadaFederalConservativePlatform.js');
 const canadaFederalBlocQuebecoisPlatform = require('./blocquebecois/canadaFederalBlocQuebecoisPlatform.js');
 const canadaFederalGreenPlatform = require('./green/canadaFederalGreenPlatform.js');
 
 let canadaFederalParties = [
         {
-            id: "P1", 
+            id: "P1",
+            countryId:"C1",
+            jurisdiction:"Federal",
             name:"Liberal",
             leader: "Justin Trudeau",
             leaderPortrait: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Justin_Trudeau_in_Lima%2C_Peru_-_2018_%2841507133581%29_%28cropped%29.jpg/220px-Justin_Trudeau_in_Lima%2C_Peru_-_2018_%2841507133581%29_%28cropped%29.jpg", 
@@ -23,11 +26,13 @@ let canadaFederalParties = [
             position: "Centre-Left", 
             founded: "1867", 
             headquarters: "Ottawa, Ontario", 
-            budgetLink: "/data/countries/C1/parties/P1/budget",
+            budget: canadaFederalLiberalBudget,
             platform: canadaFederalLiberalPlatform,
         },
         {
-            id: "P2", 
+            id: "P2",
+            countryId:"C1",
+            jurisdiction:"Federal", 
             name:"Conservative",
             leader: "Andrew Scheer",
             leaderPortrait: "https://www.mykemptvillenow.com/wp-content/uploads/2018/11/Andrew-Scheer-courtesy-Conservative-Party-of-Canada-e1543422278706.jpg", 
@@ -39,11 +44,13 @@ let canadaFederalParties = [
             position: "Centre-Right", 
             founded: "2003", 
             headquarters: "Ottawa, Ontario", 
-            budgetLink: "/data/countries/C1/parties/P2/budget",
+            budget: "/data/countries/C1/parties/P2/budget",
             platform: canadaFederalConservativePlatform,
         },
         {
             id: "P3", 
+            countryId:"C1",
+            jurisdiction:"Federal",
             name:"NDP",
             leader: "Jagmeet Singh",
             leaderPortrait: "https://www.nationalobserver.com/sites/nationalobserver.com/files/styles/nat_header_full_size/public/img/2017/11/06/171017-ate-jagmeet_singh-5.jpg?itok=wE0N9SV-", 
@@ -55,11 +62,13 @@ let canadaFederalParties = [
             position: "Centre-Left", 
             founded: "1961", 
             headquarters: "Ottawa, Ontario", 
-            budgetLink: "/data/countries/C1/parties/P3/budget/P1",
+            budget: "/data/countries/C1/parties/P3/budget/P1",
             platform: canadaFederalNdpPlatform,
         },
         {
-            id: "P4", 
+            id: "P4",
+            countryId:"C1",
+            jurisdiction:"Federal", 
             name:"Bloc Quebecois",
             leader: "Yves-François Blanchet",
             leaderPortrait: "https://www.coupdoeil.info/wp-content/uploads/sites/10/2019/02/bloc31.jpg", 
@@ -71,11 +80,13 @@ let canadaFederalParties = [
             position: "Centre-Left", 
             founded: "1991", 
             headquarters: "Montreal, Quebec", 
-            budgetLink: "/data/countries/C1/parties/P4/budget",
+            budget: "/data/countries/C1/parties/P4/budget",
             platform: canadaFederalBlocQuebecoisPlatform,
         },
         {
-            id: "P5", 
+            id: "P5",
+            countryId:"C1",
+            jurisdiction:"Federal", 
             name:"Green",
             leader: "Elizabeth May",
             leaderPortrait: "https://pbs.twimg.com/profile_images/539819887707709441/jbUkuD5E.jpeg", 
@@ -87,7 +98,7 @@ let canadaFederalParties = [
             position: "Left", 
             founded: "1983", 
             headquarters: "Ottawa, Ontario", 
-            budgetLink: "/data/countries/C1/parties/P5/budget",
+            budget: "/data/countries/C1/parties/P5/budget",
             platform: canadaFederalGreenPlatform,
         },
 ]
