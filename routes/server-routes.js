@@ -66,6 +66,7 @@ router.get('/countries', getCountryList);
 router.get('/countries/:id', getCountry);
 router.get('/countries/:id/parties', getPartyList);
 router.get('/countries/:id/parties/:id', getParty);
+router.get('/countries/:id/parties/:id/budget', getParty);
 // router.get('/countries/:id/regions', getRegionsList);
 // router.get('/countries/:id/regions/:id', getRegion);
 // router.get('/countries/:id/regions/:id/parties', getRegionParties);

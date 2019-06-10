@@ -3,6 +3,7 @@ import axios from 'axios';
 import Dropdown from '../buttons/DropDown';
 import './Country.scss'
 import NavBarContent from '../nav-bar/NavBarContent';
+import Doughnut from '../charts/Doughnut';
 import PartyItem from './PartyItem';
 
 export class Country extends Component {
@@ -11,7 +12,18 @@ export class Country extends Component {
         countryDetails: {
             parties: [],
             subRegionNames: [],
-        }
+        },
+
+        representationData: {
+            labels: [],
+            datasets: [{
+                data:[],
+                backgroundColor:[],
+                hoverBackgroundColor:[],
+                hoverBorderColor: "#231F20"
+            }]
+        },
+
     }
 
     componentDidMount() {
@@ -21,7 +33,26 @@ export class Country extends Component {
         axios.get(`http://localhost:8080/data/countries/${id}`)
             .then(response => {
                 this.setState({
-                    countryDetails: response.data
+                    countryDetails: response.data,
+                })
+                this.setState({
+                    representationData: {
+
+                        labels: this.state.countryDetails.parties.map( party => {
+                            return party.name;
+                        }),
+                        datasets: [{
+                            data: this.state.countryDetails.parties.map( party => {
+                                return party.seats;
+                            }),
+                            backgroundColor: this.state.countryDetails.parties.map( party => {
+                                return party.primaryColour;
+                            }),
+                            hoverBackgroundColor: this.state.countryDetails.parties.map( party => {
+                                return party.primaryColour;
+                            }),
+                        }],
+                    },
                 })
                 
             })
@@ -64,8 +95,7 @@ export class Country extends Component {
             </div>
             <div className="country__parliament-wrapper">
             <h1 className="country__parliament__title">Party Representation</h1>
-            <p className="content--loud">this will be a graph</p>
-
+                <Doughnut data={this.state.representationData} title="" height={20} width={20} />
             </div>
             <div className="country__parties-wrapper">
             <h1 className="country__parliament__title">Parties</h1>
