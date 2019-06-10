@@ -131,7 +131,7 @@ let countryList = [
             partySystem: "Multi-Party",
             parties: 3,
             nextElectionDate: "November 6, 2020",
-            flag: "https://lipis.github.io/flag-icon-css/flags/4x3/us.svg",
+            flag: "https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg",
             primaryColour:"#d71922",
             secondaryColour: "#FFFFFF",
             thirdColour: "#FFFFFF",

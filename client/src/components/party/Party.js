@@ -29,7 +29,8 @@ export class Party extends Component {
         countryDetails: {
             parties: [],
             subRegionNames: [],
-        }
+        },
+        pathName: "",
     }
 
 
@@ -48,6 +49,9 @@ export class Party extends Component {
                     this.setState({
                         countryDetails: response.data,
                     })
+                    this.setState({
+                        pathName: window.location.pathname,
+                    })
 
                 })
                 .catch(error => {
@@ -59,6 +63,38 @@ export class Party extends Component {
             console.log(error)
         })
 
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+
+        if(window.location.pathname !== prevState.pathName) {
+        
+        axios.get(`http://localhost:8080/data/${window.location.pathname}`)
+        .then(response => {
+            this.setState({
+                partyDetails: response.data,
+            })
+            
+            //
+                axios.get(`http://localhost:8080/data/countries/${this.state.partyDetails.countryId}`)
+                .then(response => {
+                    this.setState({
+                        countryDetails: response.data,
+                    })
+                    this.setState({
+                        pathName: window.location.pathname,
+                    })
+
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+            //
+        })
+        .catch(error => {
+            console.log(error)
+        })
+        }
     }
     
     
@@ -75,7 +111,7 @@ export class Party extends Component {
                 <div className="party__hero-section" style={{backgroundColor:this.state.partyDetails.primaryColour}}>
                     <div className="party__jurisdiction-dropdown-wrapper">
                         <p className="party__jurisdiction">{this.state.countryDetails.jurisdiction}</p>
-                        <Dropdown content="Parties" array={this.state.countryDetails.parties} />
+                        <Dropdown content="Parties" array={this.state.countryDetails.parties} linkPath={`/countries/${this.state.countryDetails.id}/parties`} />
                     </div>
                 </div>
                     <div className="party__hero-section__logo-frame">
