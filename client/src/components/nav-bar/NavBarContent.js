@@ -1,9 +1,10 @@
 import logoOnYellow from '../../assets/images/logos/Logo-for-Yellow.png';
 import React, { Component } from 'react';
 // import menuIcon from '../../assets/icons/menu-white.svg';
-import searchIcon from '../../assets/icons/search-white.svg';
+// import searchIcon from '../../assets/icons/search-white.svg';
 import { Link } from 'react-router-dom';
 import SwipeableDrawerContent from '../drawer/SwipeableDrawerContent';
+import SwipeableSearchDrawerContent from '../drawer/SwipeableSearchDrawerContent';
 import './NavBarContent.scss';
 
 class NavBarContent extends Component {
@@ -19,7 +20,7 @@ class NavBarContent extends Component {
                   <Link to="/"><img className="navbar-content__logo" src={logoOnYellow} alt="logo" /></Link>
                 </div>
                 <div className="navbar-content__search-wrapper">
-                    <img className="navbar-content__search-icon" src={searchIcon} alt="search-icon" />
+                    <SwipeableSearchDrawerContent />
                 </div>
                 </div>
             </div>
