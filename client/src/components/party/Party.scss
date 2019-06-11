@@ -3,7 +3,8 @@
 
 .party-wrapper {
     background-color: $politik-light-grey;
-    padding-top: 4rem;
+    padding: 4rem 0rem 1.5rem 0rem;
+    box-shadow: $box-shadow;
 
     .party__hero-section {
         width: 100%;
@@ -84,7 +85,7 @@
             }
 
             .party__party-details--title {
-                @include subheader;
+                @include h2-header;
             }
         }
 
@@ -110,7 +111,7 @@
         padding-bottom: 1.5rem;
 
         .party__party-platform__title {
-            @include subheader;
+            @include h2-header;
             padding: 1rem;
         }    
         
@@ -118,7 +119,7 @@
             margin: 1rem;
 
             .party__party-platform__tenet-title{
-                @include subheader;
+                @include h3-header;
                 margin-bottom: 1rem;
             }
 
@@ -130,9 +131,17 @@
                     margin-bottom: 1rem;
                 }
 
-                .ternary-negative-result {
-                    @include paragraph;
+                .negative-holder {
+                    display: flex;
+                    align-items: flex-start;
+
+
+                    .ternary-negative-result {
+                        margin-left: 1rem;
+                        @include paragraph;
+                    }
                 }
+
             }
         }
     }

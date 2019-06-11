@@ -3,6 +3,7 @@ import axios from 'axios';
 import Dropdown from '../buttons/DropDown';
 import './Country.scss'
 import NavBarContent from '../nav-bar/NavBarContent';
+import Footer from '../footer/Footer';
 import Doughnut from '../charts/Doughnut';
 import PartyItem from './PartyItem';
 import { GridLoader } from 'react-spinners';
@@ -112,7 +113,7 @@ export class Country extends Component {
 
                         </div>
                         <div className="country__parliament-wrapper">
-                            <h1 className="country__parliament__title">Party Representation</h1>
+                            <h1 className="country__parliament__title">Seat Breakdown </h1>
                             <Doughnut data={this.state.representationData} title="" height={20} width={20} />
                         </div>
                         <div className="country__parties-wrapper">
@@ -123,6 +124,7 @@ export class Country extends Component {
                         </div>
 
                     </div>
+                    <Footer />
                 </>
             )
         }

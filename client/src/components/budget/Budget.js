@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import NavBarContent from '../nav-bar/NavBarContent';
+import Footer from '../footer/Footer';
 // import BubbleChart from '../bubble-chart/BubbleChart';
 import Bar from '../charts/Bar';
 import './Budget.scss'
@@ -90,6 +91,7 @@ export class Budget extends Component {
                             <Bar type="horizontalBar" data={this.state.budgetData} title="" height={1000} width={30} />
                     </div>
                 </div>
+                <Footer />
             </>
         )
     }

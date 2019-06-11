@@ -3,7 +3,8 @@
 
 .budget-wrapper {
     background-color: $politik-light-grey;
-    padding-top: 9rem;
+    padding: 9rem 0rem 1.5rem 0rem;
+    box-shadow: $box-shadow;
 
     .budget__budget-details-wrapper {
         margin: 0rem 1rem 1rem 1rem;
