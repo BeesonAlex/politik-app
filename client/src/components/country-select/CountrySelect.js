@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import NextCountryItem from './NextCountryItem';
 import NavBarContent from '../nav-bar/NavBarContent';
+import Footer from '../footer/Footer';
 import './CountrySelect.scss';
 
 export class CountrySelect extends Component {
@@ -38,6 +39,7 @@ export class CountrySelect extends Component {
                 
                 </div>
             </div>
+            <Footer />
             </>
         )
     }

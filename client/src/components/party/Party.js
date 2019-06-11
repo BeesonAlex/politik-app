@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import NavBarContent from '../nav-bar/NavBarContent';
+import Footer from '../footer/Footer';
 import { Link } from 'react-router-dom';
 import Dropdown from '../buttons/DropDown';
 import Button from '../buttons/Button';
+import alertIcon from '../../assets/icons/alert-circle.svg'
 import './Party.scss';
 import axios from 'axios';
 
@@ -124,7 +126,7 @@ export class Party extends Component {
             <div className="party__party-details-wrapper">
             <div className="party__portrait-title-wrapper">
             <div className="party__party-details__portrait-frame" style={{backgroundImage:`url(${this.state.partyDetails.leaderPortrait})`}} />
-            <h1 className="party__party-details--title">Party Details</h1>
+            <h1 className="party__party-details--title">Info</h1>
             </div>
             <div className="party__party-details__info-wrapper">
             <h2 className="party__party-details--subheading">Leader:</h2>
@@ -159,7 +161,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.socialIssues.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -171,7 +173,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.immigration.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -183,7 +185,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.domesticPolicy.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -195,7 +197,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.healthcare.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -207,7 +209,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.environment.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -219,7 +221,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.economy.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -231,7 +233,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.electoralIssues.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -243,7 +245,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.foreignPolicy.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -255,7 +257,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.science.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -267,7 +269,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.crime.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -279,7 +281,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.nationalSecurity.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -291,7 +293,7 @@ export class Party extends Component {
                         this.state.partyDetails.platform.infrastructureTransportation.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
                     })
-                    : <p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    : <div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -302,7 +304,8 @@ export class Party extends Component {
                         this.state.partyDetails.platform.socialIssues ?  
                         this.state.partyDetails.platform.socialIssues.map( issue => {
                         return <li key={createKey()} className="party__party-platform__tenet-list-item">{issue}</li>
-                    }):<p className="ternary-negative-result">The party has not released a platform for this issue.</p>
+                    })
+                    :<div className="negative-holder"><img className="alert-icon" src={alertIcon} alt="alert-icon" /><p className="ternary-negative-result">The party has not released a platform for this issue.</p></div>
                     }
                 </ul>
             </div>
@@ -312,6 +315,7 @@ export class Party extends Component {
             
             </div>
             </div>
+            <Footer />
             </>
         )
     }

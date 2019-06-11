@@ -49,6 +49,15 @@
     text-align: left;
     text-decoration: underline $politik-yellow;
 }
+@mixin h3-header () {
+    font-family:'Caslon Bold', serif;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: $black;
+    margin: 0rem;
+    padding: 1rem;
+    text-align: left;
+}
 
 @mixin subheader () {
     font-family:'Futura Bold', sans-serif;
@@ -60,8 +69,15 @@
 
 @mixin paragraph () {
     font-family:'Roboto', sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+    font-size: 1;
+    line-height: 1.75rem;
+    color: $black;
+}
+
+@mixin paragraph-futura () {
+    font-family:'Futura Regular', sans-serif;
+    font-size: 1;
+    line-height: 1.75rem;
     color: $black;
 }
 
@@ -79,6 +95,7 @@
     color: $black;
     text-transform: uppercase;
     font-weight: 700;
+    color: grey;
 }
 
 /* Mobile Mixins */

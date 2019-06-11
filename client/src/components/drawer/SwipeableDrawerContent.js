@@ -44,7 +44,8 @@ const useStyles = makeStyles({
         onKeyDown={toggleDrawer(side, false)}
       >
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        <h1>Menu</h1>
+          {['Home', 'Countries',].map((text, index) => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
@@ -52,7 +53,7 @@ const useStyles = makeStyles({
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {['Mission', 'Contact Us',].map((text, index) => (
             <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>

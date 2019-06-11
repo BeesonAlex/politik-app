@@ -2,12 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
+// import Divider from '@material-ui/core/Divider';
+// import ListItem from '@material-ui/core/ListItem';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 import searchIcon from '../../assets/icons/search.svg';
 // import menuIcon from '../../assets/icons/menu.svg';
-import ListItemText from '@material-ui/core/ListItemText';
+// import ListItemText from '@material-ui/core/ListItemText';
 
 import Button from '@material-ui/core/Button';
 
@@ -66,23 +66,14 @@ const useStyles = makeStyles({
       <div
         className={classes.fullList}
         role="presentation"
-        onClick={toggleDrawer(side, false)}
-        onKeyDown={toggleDrawer(side, false)}
+        // onClick={toggleDrawer(side, false)}
+        // onKeyDown={toggleDrawer(side, false)}
       >
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+        <h1>Search</h1>
+        <div className="navbar__searchbar-wrapper">
+                <input className="navbar__search" type="text" name="search" placeholder="Search"></input>
+        </div>
         </List>
       </div>
     );
