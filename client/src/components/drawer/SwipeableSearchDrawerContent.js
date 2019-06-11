@@ -8,6 +8,7 @@ import List from '@material-ui/core/List';
 import searchIcon from '../../assets/icons/search-white.svg';
 // import menuIcon from '../../assets/icons/menu.svg';
 // import ListItemText from '@material-ui/core/ListItemText';
+import './SwipeableDrawer.scss';
 
 import Button from '@material-ui/core/Button';
 
@@ -70,7 +71,6 @@ const useStyles = makeStyles({
         // onKeyDown={toggleDrawer(side, false)}
       >
         <List>
-        <h1>Search</h1>
         <div className="navbar__searchbar-wrapper">
                 <input className="navbar__search" type="text" name="search" placeholder="Search"></input>
         </div>

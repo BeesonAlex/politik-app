@@ -8,6 +8,7 @@ import List from '@material-ui/core/List';
 import searchIcon from '../../assets/icons/search.svg';
 // import menuIcon from '../../assets/icons/menu.svg';
 // import ListItemText from '@material-ui/core/ListItemText';
+import './SwipeableDrawer.scss';
 
 import Button from '@material-ui/core/Button';
 

@@ -7,6 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 import menuIcon from '../../assets/icons/menu-white.svg';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Link } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
 
@@ -44,10 +45,11 @@ const useStyles = makeStyles({
         onKeyDown={toggleDrawer(side, false)}
       >
         <List>
-        <h1>Menu</h1>
           {['Home', 'Countries',].map((text, index) => (
             <ListItem button key={text}>
+                <Link to={`/${text}`}>
               <ListItemText primary={text} />
+              </Link>
             </ListItem>
           ))}
         </List>
@@ -55,7 +57,9 @@ const useStyles = makeStyles({
         <List>
           {['Mission', 'Contact Us',].map((text, index) => (
             <ListItem button key={text}>
+            <Link to={`/${text}`}>
               <ListItemText primary={text} />
+              </Link>
             </ListItem>
           ))}
         </List>
