@@ -61,7 +61,7 @@ let countryList = [
             parliamentName: "Congress",
             seats: 435,
             subRegions: 50,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -78,8 +78,8 @@ let countryList = [
                 ],
             
                 parties: [
-                {id: "P1", name:"Democrat", seats: 235, smLogo: "https://www.liberal.ca/wp-content/uploads/2010/06/L-logo-red.png", }, 
-                {id: "P2", name:"Republican", seats: 198, smLogo:"https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Conservative_Party_of_Canada.svg/1200px-Conservative_Party_of_Canada.svg.png",},
+                    {id: "P1", name:"Democratic", seats: 235, primaryColour: "#0414bc", smLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/DemocraticLogo.svg/1280px-DemocraticLogo.svg.png", }, 
+                    {id: "P2", name:"Republican", seats: 198, primaryColour: "#de0100", smLogo:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Republicanlogo.svg/2000px-Republicanlogo.svg.png",},
             ],
             subRegionslink: "/countries/C2/subregions",
             partiesLink: "/countries/C2/parties",

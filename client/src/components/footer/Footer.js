@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import '../../App.scss';
 import './Footer.scss';
 import footerGraphic from '../../assets/images/logos/footer-graphic.png';
 import facebookIcon from '../../assets/icons/facebook.svg';
