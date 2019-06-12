@@ -71,7 +71,6 @@ const useStyles = makeStyles({
         // onKeyDown={toggleDrawer(side, false)}
       >
         <List>
-        <h1>Search</h1>
         <div className="navbar__searchbar-wrapper">
                 <input className="navbar__search" type="text" name="search" placeholder="Search"></input>
         </div>
