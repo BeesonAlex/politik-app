@@ -62,19 +62,56 @@ let countryList = [
             seats: 435,
             subRegions: 50,
             subRegionNames: [
-                {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
-                {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
-                {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
-                {id: "R4", name: "Manitoba", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Manitoba.svg/2560px-Flag_of_Manitoba.svg.png"}, 
-                {id: "R5", name: "Ontario", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Ontario.svg/2560px-Flag_of_Ontario.svg.png"}, 
-                {id: "R6", name: "Quebec", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Drapeau_du_Qu%C3%A9bec_%28style_1950%27s%29.svg/1920px-Drapeau_du_Qu%C3%A9bec_%28style_1950%27s%29.svg.png"},
-                {id: "R7", name: "New Brunswick", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_New_Brunswick.svg/2560px-Flag_of_New_Brunswick.svg.png"}, 
-                {id: "R8", name: "Nova Scotia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Nova_Scotia.svg/2560px-Flag_of_Nova_Scotia.svg.png"},  
-                {id: "R9", name: "Prince Edward Island", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_Prince_Edward_Island.svg/1920px-Flag_of_Prince_Edward_Island.svg.png"}, 
-                {id: "R10", name: "Newfoundland & Labrador", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Newfoundland_and_Labrador.svg/2560px-Flag_of_Newfoundland_and_Labrador.svg.png"},
-                {id: "R11", name: "Yukon", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_of_Yukon.svg/2560px-Flag_of_Yukon.svg.png"}, 
-                {id: "R12", name: "Northwest Territories", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_the_Northwest_Territories.svg/2560px-Flag_of_the_Northwest_Territories.svg.png"},
-                {id: "R13", name: "Nunavut", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Flag_of_Nunavut.svg/2560px-Flag_of_Nunavut.svg.png"},
+                {id: "R1", name: "Alabama", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Alabama.svg/23px-Flag_of_Alabama.svg.png"},
+                {id: "R2", name: "Alaska", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/21px-Flag_of_Alaska.svg.png"}, 
+                {id: "R3", name: "Arizona", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Arizona.svg/23px-Flag_of_Arizona.svg.png"}, 
+                {id: "R4", name: "Arkansas", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Arkansas.svg/23px-Flag_of_Arkansas.svg.png"}, 
+                {id: "R5", name: "California", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/23px-Flag_of_California.svg.png"}, 
+                {id: "R6", name: "Colorado", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flag_of_Colorado.svg/23px-Flag_of_Colorado.svg.png"},
+                {id: "R7", name: "Connecticut", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Connecticut.svg/20px-Flag_of_Connecticut.svg.png"}, 
+                {id: "R8", name: "Delaware", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flag_of_Delaware.svg/23px-Flag_of_Delaware.svg.png"},  
+                {id: "R9", name: "Florida", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Florida.svg/23px-Flag_of_Florida.svg.png"}, 
+                {id: "R10", name: "Georgia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Georgia_%28U.S._state%29.svg/23px-Flag_of_Georgia_%28U.S._state%29.svg.png"},
+                {id: "R11", name: "Hawaii", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Hawaii.svg/23px-Flag_of_Hawaii.svg.png"}, 
+                {id: "R12", name: "Idaho", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Idaho.svg/19px-Flag_of_Idaho.svg.png"},
+                {id: "R13", name: "Illinois", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg/23px-Flag_of_Illinois.svg.png"},
+                {id: "R14", name: "Indiana", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
+                {id: "R15", name: "Iowa", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Iowa.svg/22px-Flag_of_Iowa.svg.png"}, 
+                {id: "R16", name: "Kansas", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Kansas.svg/23px-Flag_of_Kansas.svg.png"}, 
+                {id: "R17", name: "Kentucky", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Kentucky.svg/23px-Flag_of_Kentucky.svg.png"}, 
+                {id: "R18", name: "Louisiana", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Flag_of_Louisiana.svg/23px-Flag_of_Louisiana.svg.png"}, 
+                {id: "R19", name: "Maine", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Maine.svg/19px-Flag_of_Maine.svg.png"},
+                {id: "R20", name: "Maryland", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Maryland.svg/23px-Flag_of_Maryland.svg.png"}, 
+                {id: "R21", name: "Massachusetts", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/23px-Flag_of_Massachusetts.svg.png"},  
+                {id: "R22", name: "Michigan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_Michigan.svg/23px-Flag_of_Michigan.svg.png"}, 
+                {id: "R23", name: "Minnesota", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Minnesota.svg/23px-Flag_of_Minnesota.svg.png"},
+                {id: "R24", name: "Mississippi", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_Mississippi.svg/23px-Flag_of_Mississippi.svg.png"}, 
+                {id: "R25", name: "Missouri", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Missouri.svg/23px-Flag_of_Missouri.svg.png"},
+                {id: "R26", name: "Montana", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_Montana.svg/23px-Flag_of_Montana.svg.png"},
+                {id: "R27", name: "Nebraska", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flag_of_Nebraska.svg/23px-Flag_of_Nebraska.svg.png"},
+                {id: "R28", name: "Nevada", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Flag_of_Nevada.svg/23px-Flag_of_Nevada.svg.png"}, 
+                {id: "R29", name: "New Hampshire", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_New_Hampshire.svg/23px-Flag_of_New_Hampshire.svg.png"}, 
+                {id: "R30", name: "New Jersey", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_New_Jersey.svg/23px-Flag_of_New_Jersey.svg.png"}, 
+                {id: "R31", name: "New Mexico", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_New_Mexico.svg/23px-Flag_of_New_Mexico.svg.png"}, 
+                {id: "R32", name: "New York", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_New_York.svg/23px-Flag_of_New_York.svg.png"},
+                {id: "R33", name: "North Carolina", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_North_Carolina.svg/23px-Flag_of_North_Carolina.svg.png"}, 
+                {id: "R34", name: "North Dakota", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Flag_of_North_Dakota.svg/21px-Flag_of_North_Dakota.svg.png"},  
+                {id: "R35", name: "Ohio", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Ohio.svg/23px-Flag_of_Ohio.svg.png"}, 
+                {id: "R36", name: "Oklahoma", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Flag_of_Oklahoma.svg/23px-Flag_of_Oklahoma.svg.png"},
+                {id: "R37", name: "Oregon", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Oregon.svg/23px-Flag_of_Oregon.svg.png"}, 
+                {id: "R38", name: "Pennsylvania", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Pennsylvania.svg/23px-Flag_of_Pennsylvania.svg.png"},
+                {id: "R39", name: "Rhode Island", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Rhode_Island.svg/19px-Flag_of_Rhode_Island.svg.png"},
+                {id: "R40", name: "South Carolina", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_of_South_Carolina.svg/23px-Flag_of_South_Carolina.svg.png"},
+                {id: "R41", name: "South Dakota", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_South_Dakota.svg/23px-Flag_of_South_Dakota.svg.png"}, 
+                {id: "R42", name: "Tennessee", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Tennessee.svg/23px-Flag_of_Tennessee.svg.png"}, 
+                {id: "R43", name: "Texas", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/23px-Flag_of_Texas.svg.png"}, 
+                {id: "R44", name: "Utah", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Utah.svg/23px-Flag_of_Utah.svg.png"}, 
+                {id: "R45", name: "Vermont", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Vermont.svg/23px-Flag_of_Vermont.svg.png"},
+                {id: "R46", name: "Virginia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Virginia.svg/22px-Flag_of_Virginia.svg.png"}, 
+                {id: "R47", name: "Washington", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Washington.svg/23px-Flag_of_Washington.svg.png"},  
+                {id: "R48", name: "West Virginia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_West_Virginia.svg/23px-Flag_of_West_Virginia.svg.png"}, 
+                {id: "R49", name: "Wisconsin", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_Wisconsin.svg/23px-Flag_of_Wisconsin.svg.png"},
+                {id: "R50", name: "Wyoming", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Wyoming.svg/22px-Flag_of_Wyoming.svg.png"}, 
                 ],
             
                 parties: [
@@ -101,7 +138,7 @@ let countryList = [
             parliamentName: "Congress",
             seats: 435,
             subRegions: 12,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -141,7 +178,7 @@ let countryList = [
             parliamentName: "Parliament",
             seats: 435,
             subRegions: 18,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -181,7 +218,7 @@ let countryList = [
             parliamentName: "Lok Sabha",
             seats: 435,
             subRegions: 36,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -221,7 +258,7 @@ let countryList = [
             parliamentName: "Parliament",
             seats: 435,
             subRegions: 16,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -261,7 +298,7 @@ let countryList = [
             parliamentName: "Congress",
             seats: 435,
             subRegions: 6,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -301,7 +338,7 @@ let countryList = [
             parliamentName: "Congress",
             seats: 435,
             subRegions: 26,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -341,7 +378,7 @@ let countryList = [
             parliamentName: "Knesset",
             seats: 120,
             subRegions: 6,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
@@ -381,7 +418,7 @@ let countryList = [
             parliamentName: "Congress",
             seats: 435,
             subRegions: 25,
-            subRegionDetails: [
+            subRegionNames: [
                 {id: "R1", name: "British Columbia", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_British_Columbia_02.svg/2560px-Flag_of_British_Columbia_02.svg.png"},
                 {id: "R2", name: "Alberta", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2560px-Flag_of_Alberta.svg.png"}, 
                 {id: "R3", name: "Saskatchewan", flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2560px-Flag_of_Saskatchewan.svg.png"}, 
