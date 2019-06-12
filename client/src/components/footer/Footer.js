@@ -23,8 +23,8 @@ class Footer extends Component {
                     <div className="footer__content__link-wrapper">
                         <Link to="/"><h3 className="link">Home</h3></Link>
                         <Link to="/countries"><h3 className="link">Countries</h3></Link>
-                        <Link to="/"><h3 className="link">Mission</h3></Link>
-                        <Link to="/"><h3 className="link">Contact Us</h3></Link>
+                        <Link to="/Mission"><h3 className="link">Mission</h3></Link>
+                        <Link to="/Contact"><h3 className="link">Contact</h3></Link>
                     </div>  
                  </div> 
         )

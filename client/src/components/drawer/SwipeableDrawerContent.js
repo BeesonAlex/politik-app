@@ -55,7 +55,7 @@ const useStyles = makeStyles({
         </List>
         <Divider />
         <List>
-          {['Mission', 'Contact Us',].map((text, index) => (
+          {['Mission', 'Contact',].map((text, index) => (
             <ListItem button key={text}>
             <Link to={`/${text}`}>
               <ListItemText primary={text} />
